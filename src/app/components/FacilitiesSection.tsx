@@ -12,7 +12,7 @@ interface Props {
 const facilities = [
 {
   id: 'classrooms',
-  image: '/assets/images/ChatGPT_Image_Aug_29__2026__11_00_56_AM-1788001392365.png',
+  image: '/assets/images/modern_classroom-1788003857606.png',
   alt: 'Teacher instructing young students in a bright modern classroom at Frozen Mountain School',
   icon: 'AcademicCapIcon' as const,
   accentColor: '#0A2463',

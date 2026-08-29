@@ -11,7 +11,7 @@ interface Props {
 const facilities = [
 {
   id: 'classrooms',
-  image: '/assets/images/modern.png',
+  image: '/assets/images/modern_classroom-1788003857606.png',
   alt: 'Teacher instructing young students in a bright modern classroom at Frozen Mountain School',
   icon: 'AcademicCapIcon',
   accentColor: '#0A2463',
