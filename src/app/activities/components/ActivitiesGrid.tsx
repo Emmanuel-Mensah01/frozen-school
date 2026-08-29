@@ -64,7 +64,7 @@ const activities = [
 {
   id: 'reading',
   num: '04',
-  image: 'https://frozenmountain-xi.vercel.app/_next/image?url=%2Fassets%2Fimages%2Ffrozen_mountain_library.png&w=3840&q=75',
+  image: '/assets/images/library__2_-1788002498750.png',
   alt: 'Students reading books and participating in debate club at Frozen Mountain School library',
   icon: 'BookOpenIcon',
   accentColor: '#0A2463',

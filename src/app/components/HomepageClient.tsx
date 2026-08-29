@@ -11,6 +11,8 @@ import RulesSection from './RulesSection';
 import AdmissionsCTA from './AdmissionsCTA';
 import CampusGallery from './CampusGallery';
 import FacilitiesSection from './FacilitiesSection';
+import GraduationShowcase from './GraduationShowcase';
+import BuildingShowcase from './BuildingShowcase';
 
 export default function HomepageClient() {
   const [lang, setLang] = useState<'en' | 'sw'>('en');
@@ -69,8 +71,10 @@ export default function HomepageClient() {
       <main>
         <HeroSection lang={lang} />
         <AboutSection lang={lang} />
+        <BuildingShowcase lang={lang} />
         <ProgramsSection lang={lang} />
         <CampusGallery lang={lang} />
+        <GraduationShowcase lang={lang} />
         <FacilitiesSection lang={lang} />
         <LeadershipSection lang={lang} />
         <RulesSection lang={lang} />

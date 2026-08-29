@@ -52,16 +52,16 @@ const content = {
 
 const heroImages = [
 {
-  src: 'https://frozenmountain-xi.vercel.app/_next/image?url=%2Fassets%2Fimages%2Ffrozen_mountain_hero_classroom.png&w=3840&q=75',
-  alt: 'African school students in classroom attentively listening to teacher during lesson at Frozen Mountain School'
+  src: '/assets/images/building_1-1788001389374.png',
+  alt: "Frozen Mountain School main 3-story building with iconic red columns and white facade in King'anzi A, Ubungo, Dar es Salaam"
 },
 {
-  src: 'https://frozenmountain-xi.vercel.app/_next/image?url=%2Fassets%2Fimages%2Ffrozen_mountain_gallery4.png&w=3840&q=75',
-  alt: 'Children in school uniforms studying together at desks in bright African classroom at Frozen Mountain'
+  src: '/assets/images/building_2-1788001323600.jpeg',
+  alt: 'Frozen Mountain School building dramatically illuminated at night — a beacon of learning in Dar es Salaam'
 },
 {
-  src: 'https://frozenmountain-xi.vercel.app/_next/image?url=%2Fassets%2Fimages%2Ffrozen_mountain_primary.png&w=3840&q=75',
-  alt: 'Primary school students engaged in learning activities in a well-lit classroom at Frozen Mountain School'
+  src: '/assets/images/ChatGPT_Image_Aug_29__2026__11_00_56_AM-1788001392365.png',
+  alt: 'Aerial drone view of Frozen Mountain School campus showing full school grounds and surrounding neighborhood in Dar es Salaam'
 }];
 
 

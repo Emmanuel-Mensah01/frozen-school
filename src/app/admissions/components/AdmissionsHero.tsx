@@ -49,11 +49,11 @@ export default function AdmissionsHero({ lang }: Props) {
           <div className="animate-clip-in hidden lg:block" style={{ animationDelay: '0.2s' }}>
             <div className="relative rounded-3xl overflow-hidden shadow-xl img-zoom-inner img-card-hover">
               <AppImage
-                src="https://frozenmountain-xi.vercel.app/_next/image?url=%2Fassets%2Fimages%2Ffrozen_mountain_gallery4.png&w=3840&q=75"
-                alt="African school children in uniforms walking into school building on admission day at Frozen Mountain"
+                src="/assets/images/building_1-1788001389374.png"
+                alt="Frozen Mountain School main 3-story building with iconic red columns and white facade — the home of quality education in Dar es Salaam"
                 width={700}
                 height={420}
-                className="w-full h-72 object-cover img-inner"
+                className="w-full h-72 object-cover object-center img-inner"
                 priority />
 
               <div

@@ -11,8 +11,8 @@ interface Props {
 const facilities = [
 {
   id: 'classrooms',
-  image: 'https://frozenmountain-xi.vercel.app/_next/image?url=%2Fassets%2Fimages%2Ffrozen_mountain_classroom.png&w=3840&q=75',
-  alt: 'Spacious well-ventilated classroom with smart boards and child-friendly furniture at Frozen Mountain School',
+  image: '/assets/images/modern_classroom-1788003857606.png',
+  alt: 'Teacher instructing young students in a bright modern classroom at Frozen Mountain School',
   icon: 'AcademicCapIcon',
   accentColor: '#0A2463',
   span: 'lg:col-span-2 lg:row-span-2',
@@ -29,8 +29,8 @@ const facilities = [
 },
 {
   id: 'sports',
-  image: 'https://frozenmountain-xi.vercel.app/_next/image?url=%2Fassets%2Fimages%2Ffrozen_mountain_sports_grounds.png&w=3840&q=75',
-  alt: 'Frozen Mountain School students in tracksuits playing football on the school sports grounds',
+  image: '/assets/images/sports__2_-1788002759222.png',
+  alt: 'Young students in red and navy sports uniforms running on a field at Frozen Mountain School',
   icon: 'TrophyIcon',
   accentColor: '#0A2463',
   span: 'lg:col-span-1 lg:row-span-1',
@@ -83,7 +83,7 @@ const facilities = [
 },
 {
   id: 'library',
-  image: 'https://frozenmountain-xi.vercel.app/_next/image?url=%2Fassets%2Fimages%2Ffrozen_mountain_library_facility.png&w=3840&q=75',
+  image: '/assets/images/library__2_-1788002498750.png',
   alt: 'Well-stocked school library with bookshelves, reading tables and quiet study spaces at Frozen Mountain',
   icon: 'BookOpenIcon',
   accentColor: '#1a5c2e',

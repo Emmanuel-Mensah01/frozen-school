@@ -12,8 +12,8 @@ interface Props {
 const facilities = [
 {
   id: 'classrooms',
-  image: 'https://frozenmountain-xi.vercel.app/_next/image?url=%2Fassets%2Fimages%2Ffrozen_mountain_classroom.png&w=3840&q=75',
-  alt: 'Spacious well-ventilated classroom with smart boards and child-friendly furniture at Frozen Mountain School',
+  image: '/assets/images/ChatGPT_Image_Aug_29__2026__11_00_56_AM-1788001392365.png',
+  alt: 'Teacher instructing young students in a bright modern classroom at Frozen Mountain School',
   icon: 'AcademicCapIcon' as const,
   accentColor: '#0A2463',
   en: { title: 'Modern Classrooms', tag: 'Academic' },
@@ -21,7 +21,7 @@ const facilities = [
 },
 {
   id: 'sports',
-  image: 'https://frozenmountain-xi.vercel.app/_next/image?url=%2Fassets%2Fimages%2Ffrozen_mountain_sports_grounds.png&w=3840&q=75',
+  image: '/assets/images/sports__2_-1788002759222.png',
   alt: 'Frozen Mountain School students in tracksuits playing football on the school sports grounds',
   icon: 'TrophyIcon' as const,
   accentColor: '#0A2463',
@@ -48,7 +48,7 @@ const facilities = [
 },
 {
   id: 'library',
-  image: 'https://frozenmountain-xi.vercel.app/_next/image?url=%2Fassets%2Fimages%2Ffrozen_mountain_library_facility.png&w=3840&q=75',
+  image: '/assets/images/library__2_-1788002498750.png',
   alt: 'Well-stocked school library with bookshelves and reading tables at Frozen Mountain',
   icon: 'BookOpenIcon' as const,
   accentColor: '#1a5c2e',

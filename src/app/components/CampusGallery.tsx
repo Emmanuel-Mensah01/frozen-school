@@ -21,8 +21,8 @@ const galleryImages = [
   caption: { en: 'Science Laboratory', sw: 'Maabara ya Sayansi' }
 },
 {
-  src: 'https://frozenmountain-xi.vercel.app/_next/image?url=%2Fassets%2Fimages%2Ffrozen_mountain_classroom.png&w=3840&q=75',
-  alt: 'Spacious modern classroom with smart boards and Tanzanian students at Frozen Mountain School',
+  src: '/assets/images/ChatGPT_Image_Aug_29__2026__11_00_56_AM-1788001392365.png',
+  alt: 'Teacher instructing young students in a bright modern classroom at Frozen Mountain School',
   caption: { en: 'Modern Classrooms', sw: 'Madarasa ya Kisasa' }
 },
 {
@@ -31,7 +31,7 @@ const galleryImages = [
   caption: { en: 'Music & Performing Arts', sw: 'Muziki na Sanaa za Maonyesho' }
 },
 {
-  src: 'https://frozenmountain-xi.vercel.app/_next/image?url=%2Fassets%2Fimages%2Ffrozen_mountain_library_facility.png&w=3840&q=75',
+  src: '/assets/images/library__2_-1788002498750.png',
   alt: 'Well-stocked school library with bookshelves and reading spaces at Frozen Mountain',
   caption: { en: 'Library & Resource Centre', sw: 'Maktaba na Kituo cha Rasilimali' }
 },

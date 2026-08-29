@@ -41,8 +41,8 @@ const galleryItems: GalleryItem[] = [
 },
 {
   id: 'g3',
-  src: 'https://frozenmountain-xi.vercel.app/_next/image?url=%2Fassets%2Fimages%2Ffrozen_mountain_classroom.png&w=3840&q=75',
-  alt: 'Spacious well-ventilated classroom with smart boards and child-friendly furniture at Frozen Mountain School',
+  src: '/assets/images/ChatGPT_Image_Aug_29__2026__11_00_56_AM-1788001392365.png',
+  alt: 'Teacher instructing young students in a bright modern classroom at Frozen Mountain School',
   category: 'facilities',
   span: 'col-span-1 row-span-1',
   caption: { en: 'Modern Classrooms', sw: 'Madarasa ya Kisasa' },
@@ -59,7 +59,7 @@ const galleryItems: GalleryItem[] = [
 },
 {
   id: 'g5',
-  src: 'https://frozenmountain-xi.vercel.app/_next/image?url=%2Fassets%2Fimages%2Ffrozen_mountain_library_facility.png&w=3840&q=75',
+  src: '/assets/images/library__2_-1788002498750.png',
   alt: 'Well-stocked school library with bookshelves, reading tables and quiet study spaces at Frozen Mountain',
   category: 'facilities',
   span: 'col-span-1 row-span-1',
@@ -92,6 +92,33 @@ const galleryItems: GalleryItem[] = [
   span: 'col-span-1 row-span-1',
   caption: { en: 'Primary Class in Session', sw: 'Darasa la Msingi Linafundishwa' },
   tag: { en: 'Student Life', sw: 'Maisha ya Wanafunzi' }
+},
+{
+  id: 'g9',
+  src: '/assets/images/ChatGPT_Image_Aug_28__2026__06_24_40_PM-1787941687662.png',
+  alt: 'Frozen Mountain School graduating boys in sharp navy blue suits celebrating graduation day 2025',
+  category: 'events',
+  span: 'col-span-2 row-span-2',
+  caption: { en: 'Graduation 2025 — Boys', sw: 'Kuhitimu 2025 — Wavulana' },
+  tag: { en: 'Events', sw: 'Matukio' }
+},
+{
+  id: 'g10',
+  src: '/assets/images/ChatGPT_Image_Aug_28__2026__06_26_25_PM-1787941687295.png',
+  alt: 'Frozen Mountain School founder and director with two graduating students wearing graduation sashes at the 2025 ceremony',
+  category: 'events',
+  span: 'col-span-1 row-span-1',
+  caption: { en: 'Founder with Graduates', sw: 'Mwanzilishi na Wahitimu' },
+  tag: { en: 'Events', sw: 'Matukio' }
+},
+{
+  id: 'g11',
+  src: '/assets/images/ChatGPT_Image_Aug_28__2026__06_27_42_PM-1787941687996.png',
+  alt: 'Frozen Mountain School graduating girls in sky blue uniforms smiling proudly at the 2025 graduation ceremony in Tanzania',
+  category: 'events',
+  span: 'col-span-1 row-span-1',
+  caption: { en: 'Graduation 2025 — Girls', sw: 'Kuhitimu 2025 — Wasichana' },
+  tag: { en: 'Events', sw: 'Matukio' }
 },
 ];
 

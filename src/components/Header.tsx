@@ -35,6 +35,7 @@ export default function Header({ lang, onToggleLang, activeSection }: HeaderProp
     { href: '/', label: lang === 'en' ? 'Home' : 'Nyumbani' },
     { href: '/facilities', label: lang === 'en' ? 'Facilities' : 'Miundombinu' },
     { href: '/activities', label: lang === 'en' ? 'Activities' : 'Shughuli' },
+    { href: '/graduation', label: lang === 'en' ? 'Graduation' : 'Kuhitimu' },
     { href: '/gallery', label: lang === 'en' ? 'Gallery' : 'Picha' },
     { href: '/admissions', label: lang === 'en' ? 'Admissions' : 'Usajili' },
     { href: '/contact', label: lang === 'en' ? 'Contact' : 'Wasiliana' },
