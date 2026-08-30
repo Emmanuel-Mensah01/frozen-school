@@ -135,7 +135,7 @@ export default function ApplicationForm({ lang }: Props) {
               <div className="w-12 h-1 bg-gradient-to-r from-blue-500 to-blue-700 rounded-full mx-auto mb-4" />
             </div>
             <p className="text-slate-600 leading-relaxed text-sm max-w-sm">
-              {lang === 'en' ?'Thank you for your interest in Frozen Mountain School. Your application has been sent directly to our admissions team. We will contact you shortly to confirm the interview date and next steps. Please remember to visit the school in person to complete the official admission form and pay the TZS 10,000 fee.' :'Asante kwa nia yako katika Shule ya Frozen Mountain. Maombi yako yametumwa moja kwa moja kwa timu yetu ya usajili. Tutawasiliana nawe hivi karibuni kuthibitisha tarehe ya mahojiano na hatua za mwisho. Tafadhali kumbuka kutembelea shule binafsi kukamilisha fomu rasmi ya usajili na kulipa ada ya TZS 10,000.'}
+              {lang === 'en' ?'Thank you for your interest in Frozen Mountain School. Your application has been sent directly to our admissions team. We will contact you shortly to confirm the interview date and next steps. Please remember to visit the school in person to complete the official admission form and pay the TZS 20,000 fee.' :'Asante kwa nia yako katika Shule ya Frozen Mountain. Maombi yako yametumwa moja kwa moja kwa timu yetu ya usajili. Tutawasiliana nawe hivi karibuni kuthibitisha tarehe ya mahojiano na hatua za mwisho. Tafadhali kumbuka kutembelea shule binafsi kukamilisha fomu rasmi ya usajili na kulipa ada ya TZS 20,000.'}
             </p>
             <a
               href="tel:+255717437788"
@@ -384,7 +384,7 @@ export default function ApplicationForm({ lang }: Props) {
             <div className="bg-blue-50 rounded-xl p-4 flex items-start gap-3 border border-blue-100">
               <Icon name="InformationCircleIcon" size={16} className="text-blue-600 shrink-0 mt-0.5" />
               <p className="text-xs text-blue-700 leading-relaxed">
-                {lang === 'en' ?'This online form is for expressing interest only. No payment is required here. The official admission form must be collected and completed at the school, along with the TZS 10,000 fee.' :'Fomu hii ya mtandaoni ni kwa kuonyesha nia tu. Hakuna malipo yanayohitajika hapa. Fomu rasmi ya usajili lazima ichukuliwe na kukamilishwe shuleni, pamoja na ada ya TZS 10,000.'}
+                {lang === 'en' ?'This online form is for expressing interest only. No payment is required here. The official admission form must be collected and completed at the school, along with the TZS 20,000 fee.' :'Fomu hii ya mtandaoni ni kwa kuonyesha nia tu. Hakuna malipo yanayohitajika hapa. Fomu rasmi ya usajili lazima ichukuliwe na kukamilishwe shuleni, pamoja na ada ya TZS 20,000.'}
               </p>
             </div>
 

@@ -13,7 +13,7 @@ const photos = [
     src: '/assets/images/ChatGPT_Image_Aug_28__2026__06_24_40_PM-1787941687662.png',
     alt: 'Frozen Mountain School graduating boys dressed in sharp navy blue suits celebrating their graduation day',
     caption: { en: 'Our Graduating Boys', sw: 'Wavulana Wetu Wahitimu' },
-    sub: { en: 'Class of 2025 — Navy & Gold', sw: 'Darasa la 2025 — Bluu ya Bahari na Dhahabu' },
+    sub: { en: 'Graduating Boys — Navy & Gold', sw: 'Wavulana Wahitimu — Bluu ya Bahari na Dhahabu' },
     span: 'lg:col-span-2 lg:row-span-2',
     accent: '#0A2463',
     objectPosition: 'object-top',
@@ -31,7 +31,7 @@ const photos = [
     src: '/assets/images/ChatGPT_Image_Aug_28__2026__06_27_42_PM-1787941687996.png',
     alt: 'Frozen Mountain School graduating girls in sky blue uniforms smiling proudly on their graduation day in Tanzania',
     caption: { en: 'Our Graduating Girls', sw: 'Wasichana Wetu Wahitimu' },
-    sub: { en: 'Class of 2025 — Sky Blue', sw: 'Darasa la 2025 — Bluu ya Anga' },
+    sub: { en: 'Graduating Girls — Sky Blue', sw: 'Wasichana Wahitimu — Bluu ya Anga' },
     span: 'lg:col-span-1 lg:row-span-1',
     accent: '#1a5c8a',
     objectPosition: 'object-center',
@@ -141,7 +141,7 @@ export default function GraduationGallery({ lang }: Props) {
                   className="absolute top-5 right-5 px-3 py-1.5 rounded-full text-xs font-bold"
                   style={{ background: 'rgba(212,175,55,0.9)', color: '#071A4A', backdropFilter: 'blur(8px)' }}
                 >
-                  {lang === 'en' ? 'Class of 2025' : 'Darasa la 2025'}
+                  {lang === 'en' ? 'Our Graduates' : 'Wahitimu Wetu'}
                 </div>
               )}
             </div>

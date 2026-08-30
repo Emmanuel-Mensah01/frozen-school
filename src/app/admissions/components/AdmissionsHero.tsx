@@ -40,7 +40,7 @@ export default function AdmissionsHero({ lang }: Props) {
             <div className="inline-flex items-center gap-3 bg-school-red/8 border border-school-red/25 rounded-2xl px-5 py-4">
               <Icon name="InformationCircleIcon" size={20} className="text-school-red shrink-0" />
               <p className="text-sm text-foreground font-semibold">
-                {lang === 'en' ? 'Admission Form + Interview Fee: TZS 10,000 (paid physically at school)' : 'Ada ya Fomu ya Usajili + Mahojiano: TZS 10,000 (inalipwa kimwili shuleni)'}
+                {lang === 'en' ? 'Admission Form + Interview Fee: TZS 20,000 (paid physically at school)' : 'Ada ya Fomu ya Usajili + Mahojiano: TZS 20,000 (inalipwa kimwili shuleni)'}
               </p>
             </div>
           </div>
@@ -49,8 +49,8 @@ export default function AdmissionsHero({ lang }: Props) {
           <div className="animate-clip-in hidden lg:block" style={{ animationDelay: '0.2s' }}>
             <div className="relative rounded-3xl overflow-hidden shadow-xl img-zoom-inner img-card-hover">
               <AppImage
-                src="/assets/images/building_1-1788001389374.png"
-                alt="Frozen Mountain School main 3-story building with iconic red columns and white facade — the home of quality education in Dar es Salaam"
+                src="/assets/images/admin_block-1788119804826.png"
+                alt="Frozen Mountain School administration block — the management and leadership hub of the school campus in Dar es Salaam"
                 width={700}
                 height={420}
                 className="w-full h-72 object-cover object-center img-inner"

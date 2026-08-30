@@ -72,7 +72,7 @@ export default function GraduationHero({ lang }: Props) {
             style={{ background: 'rgba(212,175,55,0.15)', border: '1px solid rgba(212,175,55,0.4)', color: '#D4AF37' }}
           >
             <span style={{ width: 6, height: 6, borderRadius: '50%', background: '#D4AF37', display: 'inline-block' }} />
-            {lang === 'en' ? 'Class of 2025' : 'Darasa la 2025'}
+            {lang === 'en' ? 'Our Graduates' : 'Wahitimu Wetu'}
           </div>
 
           {/* Main headline */}
@@ -102,7 +102,6 @@ export default function GraduationHero({ lang }: Props) {
           {/* Stats row */}
           <div className="flex flex-wrap gap-8">
             {[
-              { num: '2025', label: lang === 'en' ? 'Graduation Year' : 'Mwaka wa Kuhitimu' },
               { num: '100%', label: lang === 'en' ? 'Pass Rate' : 'Kiwango cha Kufaulu' },
               { num: '★★★★★', label: lang === 'en' ? 'Excellence' : 'Ubora' },
             ].map((stat, i) => (

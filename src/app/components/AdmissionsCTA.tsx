@@ -170,7 +170,7 @@ export default function AdmissionsCTA({ lang }: Props) {
                   <div className="inline-flex items-center gap-2.5 bg-school-red/20 border border-school-red/40 rounded-xl px-5 py-3">
                     <Icon name="InformationCircleIcon" size={18} className="text-school-red shrink-0" />
                     <span className="text-white text-sm font-semibold">
-                      {lang === 'en' ? 'Admission Form + Interview Fee: TZS 10,000' : 'Ada ya Fomu ya Usajili + Mahojiano: TZS 10,000'}
+                      {lang === 'en' ? 'Admission Form + Interview Fee: TZS 20,000' : 'Ada ya Fomu ya Usajili + Mahojiano: TZS 20,000'}
                     </span>
                   </div>
 

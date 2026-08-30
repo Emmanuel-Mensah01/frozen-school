@@ -49,6 +49,16 @@ const galleryImages = [
   src: '/assets/images/BD3D3181-CD02-4863-A2D9-1B0C48749864-1787904173254.png',
   alt: 'Frozen Mountain School primary students in classroom learning session in Tanzania',
   caption: { en: 'Primary class in session', sw: 'Darasa la msingi linafundishwa' }
+},
+{
+  src: '/assets/images/hostel-1788121187001.jpeg',
+  alt: 'Frozen Mountain School hostel building illuminated at night with warm lighting',
+  caption: { en: 'Student Hostel', sw: 'Bweni la Wanafunzi' }
+},
+{
+  src: '/assets/images/hostel-1788121207532.png',
+  alt: 'Frozen Mountain School three-storey hostel building with red columns in daytime',
+  caption: { en: 'Student Hostel', sw: 'Bweni la Wanafunzi' }
 }];
 
 

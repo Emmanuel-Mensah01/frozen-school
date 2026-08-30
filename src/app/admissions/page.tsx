@@ -5,7 +5,7 @@ import AdmissionsClient from './components/AdmissionsClient';
 export const metadata: Metadata = {
   title: 'Admissions 2025/2026 — Frozen Mountain School Dar es Salaam',
   description:
-  "Apply to Frozen Mountain Nursery, Primary & Secondary School in Dar es Salaam. Admissions open for 2025/2026. NECTA curriculum, day & boarding. Application fee TZS 10,000.",
+  "Apply to Frozen Mountain Nursery, Primary & Secondary School in Dar es Salaam. Admissions open for 2025/2026. NECTA curriculum, day & boarding. Application fee TZS 20,000.",
   keywords: [
   'school admissions Dar es Salaam',
   'Frozen Mountain School admissions',

@@ -51,18 +51,19 @@ const content = {
 };
 
 const heroImages = [
-{
-  src: '/assets/images/building_1-1788001389374.png',
-  alt: "Frozen Mountain School main 3-story building with iconic red columns and white facade in King'anzi A, Ubungo, Dar es Salaam"
-},
-{
-  src: '/assets/images/building_2-1788001323600.jpeg',
-  alt: 'Frozen Mountain School building dramatically illuminated at night — a beacon of learning in Dar es Salaam'
-},
-{
-  src: '/assets/images/ChatGPT_Image_Aug_29__2026__11_00_56_AM-1788001392365.png',
-  alt: 'Aerial drone view of Frozen Mountain School campus showing full school grounds and surrounding neighborhood in Dar es Salaam'
-}];
+  {
+    src: '/assets/images/main_school_building-1788119808267.png',
+    alt: "Frozen Mountain School main school building courtyard — the heart of academic excellence in King'anzi A, Ubungo, Dar es Salaam"
+  },
+  {
+    src: '/assets/images/school_building-1788119802238.png',
+    alt: 'Frozen Mountain School building entrance with distinctive red railings and yellow stairs — welcoming students and visitors to the campus'
+  },
+  {
+    src: '/assets/images/ChatGPT_Image_Aug_29__2026__11_00_56_AM-1788001392365.png',
+    alt: 'Aerial drone view of Frozen Mountain School campus showing full school grounds and surrounding neighborhood in Dar es Salaam'
+  }
+];
 
 
 export default function HeroSection({ lang }: Props) {
@@ -314,6 +315,7 @@ export default function HeroSection({ lang }: Props) {
           </div>
         </div>
       </div>
-    </>);
+    </>
+  );
 
 }

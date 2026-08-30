@@ -82,7 +82,7 @@ export default function GraduationMessage({ lang }: Props) {
                 className="absolute -top-4 -right-4 w-20 h-20 rounded-full flex flex-col items-center justify-center text-center shadow-2xl"
                 style={{ background: 'linear-gradient(135deg, #D4AF37, #F5D76E)', boxShadow: '0 8px 32px rgba(212,175,55,0.5)' }}
               >
-                <span className="text-school-navy font-extrabold text-lg leading-none">2025</span>
+                <span className="text-school-navy font-extrabold text-lg leading-none">🎓</span>
                 <span className="text-school-navy/70 text-xs font-bold leading-tight">CLASS</span>
               </div>
             </div>

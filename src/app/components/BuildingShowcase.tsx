@@ -12,13 +12,19 @@ const content = {
   en: {
     tag: 'Our Campus',
     headline: 'A World-Class Campus Built for Excellence',
-    sub: 'From our iconic red-column façade to our expansive aerial campus — Frozen Mountain School is a landmark of educational excellence in Dar es Salaam.',
+    sub: 'From our iconic administration block to our expansive aerial campus — Frozen Mountain School is a landmark of educational excellence in Dar es Salaam.',
     card1Caption: 'Main School Building',
     card1Sub: "King'anzi A, Ubungo, Dar es Salaam",
-    card2Caption: 'Campus at Night',
-    card2Sub: 'A beacon of learning — day and night',
+    card2Caption: 'Administration Block',
+    card2Sub: 'Heart of school leadership and management',
     card3Caption: 'Aerial Campus View',
     card3Sub: 'Expansive grounds for holistic development',
+    card4Caption: 'School Building Entrance',
+    card4Sub: 'Welcoming students every day',
+    card5Caption: 'Student Hostel',
+    card5Sub: 'Comfortable boarding facilities for students',
+    card6Caption: 'Hostel Grounds',
+    card6Sub: 'Safe and serene residential environment',
     badge1: 'Modern Infrastructure',
     badge2: 'Safe & Secure',
     badge3: 'Peaceful Environment',
@@ -26,13 +32,19 @@ const content = {
   sw: {
     tag: 'Kampasi Yetu',
     headline: 'Kampasi ya Daraja la Dunia Iliyojengwa kwa Ubora',
-    sub: 'Kutoka façade yetu ya nguzo nyekundu hadi kampasi yetu ya angani — Shule ya Frozen Mountain ni alama ya ubora wa elimu Dar es Salaam.',
+    sub: 'Kutoka jengo letu la utawala hadi kampasi yetu ya angani — Shule ya Frozen Mountain ni alama ya ubora wa elimu Dar es Salaam.',
     card1Caption: 'Jengo Kuu la Shule',
     card1Sub: "King'anzi A, Ubungo, Dar es Salaam",
-    card2Caption: 'Kampasi Usiku',
-    card2Sub: 'Taa ya elimu — mchana na usiku',
+    card2Caption: 'Jengo la Utawala',
+    card2Sub: 'Moyo wa uongozi na usimamizi wa shule',
     card3Caption: 'Mtazamo wa Angani wa Kampasi',
     card3Sub: 'Viwanja vikubwa kwa maendeleo kamili',
+    card4Caption: 'Mlango wa Jengo la Shule',
+    card4Sub: 'Kukaribisha wanafunzi kila siku',
+    card5Caption: 'Bweni la Wanafunzi',
+    card5Sub: 'Makazi mazuri ya wanafunzi wa bweni',
+    card6Caption: 'Mazingira ya Bweni',
+    card6Sub: 'Mazingira salama na tulivu ya makazi',
     badge1: 'Miundombinu ya Kisasa',
     badge2: 'Salama na Imara',
     badge3: 'Mazingira ya Amani',
@@ -107,17 +119,17 @@ export default function BuildingShowcase({ lang }: Props) {
           </div>
         </div>
 
-        {/* Bento Grid — 3 building photos */}
+        {/* Bento Grid — 4 school building photos */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-5">
-          {/* Card 1: Daytime 3-story building — large feature */}
+          {/* Card 1: Main school building courtyard — large feature */}
           <div className="lg:col-span-7 fade-in-left">
             <div
               className="relative rounded-3xl overflow-hidden shadow-2xl group"
               style={{ height: '420px' }}
             >
               <AppImage
-                src="/assets/images/building_1-1788001389374.png"
-                alt="Frozen Mountain School main 3-story building with iconic red columns and white facade in King'anzi A, Ubungo, Dar es Salaam — daytime exterior view"
+                src="/assets/images/main_school_building-1788119808267.png"
+                alt="Frozen Mountain School main school building courtyard with students and staff — the heart of academic excellence in Dar es Salaam"
                 width={900}
                 height={420}
                 priority
@@ -159,18 +171,18 @@ export default function BuildingShowcase({ lang }: Props) {
             </div>
           </div>
 
-          {/* Right column: 2 stacked cards */}
+          {/* Right column: 3 stacked cards */}
           <div className="lg:col-span-5 flex flex-col gap-5 fade-in-right">
-            {/* Card 2: Nighttime dramatic shot */}
+            {/* Card 2: Admin block */}
             <div
               className="relative rounded-3xl overflow-hidden shadow-2xl group flex-1"
-              style={{ minHeight: '195px' }}
+              style={{ minHeight: '130px' }}
             >
               <AppImage
-                src="/assets/images/building_2-1788001323600.jpeg"
-                alt="Frozen Mountain School building dramatically illuminated at night with warm golden lights glowing against the dark sky — a beacon of education in Dar es Salaam"
+                src="/assets/images/admin_block-1788119804826.png"
+                alt="Frozen Mountain School administration block — the management and leadership hub of the school campus in Dar es Salaam"
                 width={600}
-                height={210}
+                height={140}
                 className="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105"
                 sizes="(max-width: 768px) 100vw, 42vw"
               />
@@ -190,28 +202,22 @@ export default function BuildingShowcase({ lang }: Props) {
                     <p className="text-white/60 text-xs">{t.card2Sub}</p>
                   </div>
                   <div className="w-8 h-8 rounded-full bg-amber-400/20 backdrop-blur-sm flex items-center justify-center border border-amber-400/30">
-                    <Icon name="StarIcon" size={14} className="text-amber-300" />
+                    <Icon name="BuildingOfficeIcon" size={14} className="text-amber-300" />
                   </div>
                 </div>
               </div>
-              {/* Night badge */}
-              <div className="absolute top-3 right-3">
-                <span className="inline-flex items-center gap-1 bg-black/40 backdrop-blur-sm text-white/90 text-xs font-semibold px-2.5 py-1 rounded-full border border-white/15">
-                  🌙 {lang === 'en' ? 'Night View' : 'Usiku'}
-                </span>
-              </div>
             </div>
 
-            {/* Card 3: Aerial campus drone shot */}
+            {/* Card 3: Aerial drone view */}
             <div
               className="relative rounded-3xl overflow-hidden shadow-2xl group flex-1"
-              style={{ minHeight: '195px' }}
+              style={{ minHeight: '130px' }}
             >
               <AppImage
-                src="/assets/images/ChatGPT_Image_Aug_29__2026__11_00_56_AM-1788001392365.png"
+                src="/assets/images/drone_view-1788119811434.png"
                 alt="Aerial drone view of Frozen Mountain School campus showing the full school grounds, buildings, and surrounding neighborhood in Dar es Salaam, Tanzania"
                 width={600}
-                height={210}
+                height={140}
                 className="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105"
                 sizes="(max-width: 768px) 100vw, 42vw"
               />
@@ -239,6 +245,128 @@ export default function BuildingShowcase({ lang }: Props) {
               <div className="absolute top-3 right-3">
                 <span className="inline-flex items-center gap-1 bg-black/40 backdrop-blur-sm text-white/90 text-xs font-semibold px-2.5 py-1 rounded-full border border-white/15">
                   🚁 {lang === 'en' ? 'Aerial View' : 'Angani'}
+                </span>
+              </div>
+            </div>
+
+            {/* Card 4: School building entrance */}
+            <div
+              className="relative rounded-3xl overflow-hidden shadow-2xl group flex-1"
+              style={{ minHeight: '130px' }}
+            >
+              <AppImage
+                src="/assets/images/school_building-1788119802238.png"
+                alt="Frozen Mountain School building entrance with distinctive red railings and yellow stairs — welcoming students and visitors to the campus"
+                width={600}
+                height={140}
+                className="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105"
+                sizes="(max-width: 768px) 100vw, 42vw"
+              />
+              <div
+                className="absolute inset-0 pointer-events-none"
+                style={{
+                  background:
+                    'linear-gradient(to top, rgba(10,36,99,0.75) 0%, rgba(10,36,99,0.15) 55%, transparent 100%)',
+                }}
+              />
+              <div className="absolute bottom-0 left-0 right-0 p-5">
+                <div className="flex items-end justify-between">
+                  <div>
+                    <p className="text-white font-bold text-base leading-tight mb-0.5">
+                      {t.card4Caption}
+                    </p>
+                    <p className="text-white/60 text-xs">{t.card4Sub}</p>
+                  </div>
+                  <div className="w-8 h-8 rounded-full bg-red-400/20 backdrop-blur-sm flex items-center justify-center border border-red-400/30">
+                    <Icon name="HomeIcon" size={14} className="text-red-300" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Second row — Hostel images */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 mt-5">
+          {/* Card 5: Hostel night shot */}
+          <div className="fade-in-up">
+            <div
+              className="relative rounded-3xl overflow-hidden shadow-2xl group"
+              style={{ height: '280px' }}
+            >
+              <AppImage
+                src="/assets/images/hostel-1788121499808.jpeg"
+                alt="Frozen Mountain School student hostel building at night — illuminated boarding facility providing safe and comfortable accommodation for students"
+                width={700}
+                height={280}
+                className="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105"
+                sizes="(max-width: 768px) 100vw, 50vw"
+              />
+              <div
+                className="absolute inset-0 pointer-events-none"
+                style={{
+                  background:
+                    'linear-gradient(to top, rgba(10,36,99,0.8) 0%, rgba(10,36,99,0.15) 55%, transparent 100%)',
+                }}
+              />
+              <div className="absolute bottom-0 left-0 right-0 p-6">
+                <div className="flex items-end justify-between">
+                  <div>
+                    <p className="text-white font-bold text-base leading-tight mb-0.5">
+                      {t.card5Caption}
+                    </p>
+                    <p className="text-white/60 text-xs">{t.card5Sub}</p>
+                  </div>
+                  <div className="w-8 h-8 rounded-full bg-indigo-400/20 backdrop-blur-sm flex items-center justify-center border border-indigo-400/30">
+                    <Icon name="HomeModernIcon" size={14} className="text-indigo-300" />
+                  </div>
+                </div>
+              </div>
+              <div className="absolute top-4 left-4">
+                <span className="inline-flex items-center gap-1.5 bg-black/40 backdrop-blur-sm text-white/90 text-xs font-semibold px-3 py-1.5 rounded-full border border-white/15">
+                  🏠 {lang === 'en' ? 'Boarding' : 'Bweni'}
+                </span>
+              </div>
+            </div>
+          </div>
+
+          {/* Card 6: Hostel daytime shot */}
+          <div className="fade-in-up">
+            <div
+              className="relative rounded-3xl overflow-hidden shadow-2xl group"
+              style={{ height: '280px' }}
+            >
+              <AppImage
+                src="/assets/images/hostel-1788121510517.png"
+                alt="Frozen Mountain School student hostel building during the day — modern boarding facility with spacious grounds for residential students"
+                width={700}
+                height={280}
+                className="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105"
+                sizes="(max-width: 768px) 100vw, 50vw"
+              />
+              <div
+                className="absolute inset-0 pointer-events-none"
+                style={{
+                  background:
+                    'linear-gradient(to top, rgba(10,36,99,0.8) 0%, rgba(10,36,99,0.15) 55%, transparent 100%)',
+                }}
+              />
+              <div className="absolute bottom-0 left-0 right-0 p-6">
+                <div className="flex items-end justify-between">
+                  <div>
+                    <p className="text-white font-bold text-base leading-tight mb-0.5">
+                      {t.card6Caption}
+                    </p>
+                    <p className="text-white/60 text-xs">{t.card6Sub}</p>
+                  </div>
+                  <div className="w-8 h-8 rounded-full bg-emerald-400/20 backdrop-blur-sm flex items-center justify-center border border-emerald-400/30">
+                    <Icon name="HomeModernIcon" size={14} className="text-emerald-300" />
+                  </div>
+                </div>
+              </div>
+              <div className="absolute top-4 right-4">
+                <span className="inline-flex items-center gap-1.5 bg-black/40 backdrop-blur-sm text-white/90 text-xs font-semibold px-3 py-1.5 rounded-full border border-white/15">
+                  ☀️ {lang === 'en' ? 'Hostel Grounds' : 'Mazingira ya Bweni'}
                 </span>
               </div>
             </div>

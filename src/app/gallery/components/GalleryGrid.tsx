@@ -49,15 +49,6 @@ const galleryItems: GalleryItem[] = [
   tag: { en: 'Facilities', sw: 'Miundombinu' }
 },
 {
-  id: 'g4',
-  src: 'https://frozenmountain-xi.vercel.app/_next/image?url=%2Fassets%2Fimages%2Ffrozen_mountain_music.png&w=3840&q=75',
-  alt: 'Students performing choir, drama and dance at Frozen Mountain School performing arts event',
-  category: 'events',
-  span: 'col-span-1 row-span-1',
-  caption: { en: 'Music & Performing Arts', sw: 'Muziki na Sanaa za Maonyesho' },
-  tag: { en: 'Events', sw: 'Matukio' }
-},
-{
   id: 'g5',
   src: '/assets/images/library__2_-1788002498750.png',
   alt: 'Well-stocked school library with bookshelves, reading tables and quiet study spaces at Frozen Mountain',

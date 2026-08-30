@@ -18,7 +18,7 @@ const steps = {
     {
       step: '02',
       title: 'Visit the School',
-      desc: 'Come to the school in person to collect and complete the official admission form. Pay the TZS 10,000 form & interview fee at the school.',
+      desc: 'Come to the school in person to collect and complete the official admission form. Pay the TZS 20,000 form & interview fee at the school.',
       icon: 'BuildingOfficeIcon',
     },
     {
@@ -44,7 +44,7 @@ const steps = {
     {
       step: '02',
       title: 'Tembelea Shule',
-      desc: 'Nenda shuleni binafsi kupata na kukamilisha fomu rasmi ya usajili. Lipa ada ya TZS 10,000 ya fomu na mahojiano shuleni.',
+      desc: 'Nenda shuleni binafsi kupata na kukamilisha fomu rasmi ya usajili. Lipa ada ya TZS 20,000 ya fomu na mahojiano shuleni.',
       icon: 'BuildingOfficeIcon',
     },
     {
@@ -69,7 +69,7 @@ const requirements = {
     'Passport-size photos (2 copies)',
     'Parent/guardian national ID copy',
     'Completed official admission form (obtained at school)',
-    'Payment of TZS 10,000 admission form & interview fee (at school)',
+    'Payment of TZS 20,000 admission form & interview fee (at school)',
   ],
   sw: [
     'Cheti cha kuzaliwa (asili na nakala)',
@@ -77,7 +77,7 @@ const requirements = {
     'Picha za pasipoti (nakala 2)',
     'Nakala ya kitambulisho cha taifa cha mzazi/mlezi',
     'Fomu rasmi ya usajili iliyokamilika (inapatikana shuleni)',
-    'Malipo ya TZS 10,000 ya fomu ya usajili na mahojiano (shuleni)',
+    'Malipo ya TZS 20,000 ya fomu ya usajili na mahojiano (shuleni)',
   ],
 };
 
@@ -144,7 +144,7 @@ export default function AdmissionsInfo({ lang }: Props) {
                     {lang === 'en' ? 'Important Notice' : 'Taarifa Muhimu'}
                   </p>
                   <p className="text-sm text-muted-foreground leading-relaxed">
-                    {lang === 'en' ?'The official admission form must be completed physically at the school. No online payment is required or accepted. The TZS 10,000 fee covers both the admission form and the interview.' :'Fomu rasmi ya usajili lazima ikamilishwe kimwili shuleni. Hakuna malipo ya mtandaoni yanayohitajika au kukubaliwa. Ada ya TZS 10,000 inajumuisha fomu ya usajili na mahojiano.'}
+                    {lang === 'en' ?'The official admission form must be completed physically at the school. No online payment is required or accepted. The TZS 20,000 fee covers both the admission form and the interview.' :'Fomu rasmi ya usajili lazima ikamilishwe kimwili shuleni. Hakuna malipo ya mtandaoni yanayohitajika au kukubaliwa. Ada ya TZS 20,000 inajumuisha fomu ya usajili na mahojiano.'}
                   </p>
                 </div>
               </div>

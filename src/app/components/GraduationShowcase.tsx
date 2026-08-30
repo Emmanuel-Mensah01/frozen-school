@@ -51,7 +51,7 @@ export default function GraduationShowcase({ lang }: Props) {
             style={{ background: 'rgba(212,175,55,0.12)', border: '1px solid rgba(212,175,55,0.35)', color: '#D4AF37' }}
           >
             <span style={{ width: 5, height: 5, borderRadius: '50%', background: '#D4AF37', display: 'inline-block' }} />
-            {lang === 'en' ? 'Class of 2025' : 'Darasa la 2025'}
+            {lang === 'en' ? 'Our Graduates' : 'Wahitimu Wetu'}
           </div>
           <h2
             className="font-extrabold text-white tracking-tight"
@@ -88,14 +88,14 @@ export default function GraduationShowcase({ lang }: Props) {
                 {lang === 'en' ? 'Our Graduating Boys' : 'Wavulana Wetu Wahitimu'}
               </h3>
               <p className="text-white/60 text-sm mt-1 font-medium">
-                {lang === 'en' ? 'Class of 2025 — Navy & Gold' : 'Darasa la 2025 — Bluu ya Bahari na Dhahabu'}
+                {lang === 'en' ? 'Graduating Boys — Navy & Gold' : 'Wavulana Wahitimu — Bluu ya Bahari na Dhahabu'}
               </p>
             </div>
             <div
               className="absolute top-5 right-5 px-3 py-1.5 rounded-full text-xs font-bold"
               style={{ background: 'rgba(212,175,55,0.9)', color: '#071A4A', backdropFilter: 'blur(8px)' }}
             >
-              {lang === 'en' ? 'Class of 2025' : 'Darasa la 2025'}
+              {lang === 'en' ? 'Our Graduates' : 'Wahitimu Wetu'}
             </div>
           </div>
 
@@ -209,7 +209,6 @@ export default function GraduationShowcase({ lang }: Props) {
           {/* Stats */}
           <div className="flex flex-wrap gap-10 justify-center md:justify-start">
             {[
-              { num: '2025', label: lang === 'en' ? 'Graduation Year' : 'Mwaka wa Kuhitimu' },
               { num: '100%', label: lang === 'en' ? 'Pass Rate' : 'Kiwango cha Kufaulu' },
               { num: '★★★★★', label: lang === 'en' ? 'Excellence' : 'Ubora' },
             ].map((stat, i) => (

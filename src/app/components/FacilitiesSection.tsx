@@ -54,6 +54,17 @@ const facilities = [
   accentColor: '#1a5c2e',
   en: { title: 'Library & Resource Centre', tag: 'Resources' },
   sw: { title: 'Maktaba na Rasilimali', tag: 'Rasilimali' }
+},
+{
+  id: 'transport',
+  image: '/assets/images/bus_1-1788120844466.png',
+  image2: '/assets/images/bus-1788120845032.png',
+  alt: 'Two large yellow Frozen Mountain School buses parked on campus ready for student transport',
+  alt2: 'Frozen Mountain School students in red and navy uniforms posing beside the school van/minibus',
+  icon: 'TruckIcon' as const,
+  accentColor: '#0A2463',
+  en: { title: 'School Transport', tag: 'Transport' },
+  sw: { title: 'Usafiri wa Shule', tag: 'Usafiri' }
 }];
 
 
@@ -105,13 +116,37 @@ export default function FacilitiesSection({ lang }: Props) {
         </div>
 
         {/* 2x2 grid preview */}
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-5">
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-5">
           {facilities.map((facility, i) =>
           <div
             key={facility.id}
             className="relative rounded-3xl overflow-hidden group cursor-pointer scale-in h-64"
             style={{ transitionDelay: `${i * 0.1}s` }}>
             
+              {'image2' in facility ? (
+                <div className="w-full h-full flex flex-col">
+                  <div className="relative flex-1 overflow-hidden">
+                    <AppImage
+                      src={facility.image}
+                      alt={facility.alt}
+                      width={400}
+                      height={200}
+                      className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
+                      sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 17vw"
+                    />
+                  </div>
+                  <div className="relative flex-1 overflow-hidden">
+                    <AppImage
+                      src={(facility as typeof facility & { image2: string }).image2}
+                      alt={(facility as typeof facility & { alt2: string }).alt2}
+                      width={400}
+                      height={200}
+                      className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
+                      sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 17vw"
+                    />
+                  </div>
+                </div>
+              ) : (
               <AppImage
               src={facility.image}
               alt={facility.alt}
@@ -119,6 +154,7 @@ export default function FacilitiesSection({ lang }: Props) {
               height={400}
               className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
               sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 20vw" />
+              )}
             
               <div
               className="absolute inset-0 transition-opacity duration-500"

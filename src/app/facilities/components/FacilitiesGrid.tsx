@@ -98,6 +98,26 @@ const facilities = [
     desc: 'Maktaba yenye vitabu elfu nyingi, rasilimali za kidijitali, na nafasi za kusoma kwa utulivu.',
     tag: 'Rasilimali'
   }
+},
+{
+  id: 'transport',
+  image: '/assets/images/bus_1-1788120844466.png',
+  image2: '/assets/images/bus-1788120845032.png',
+  alt: 'Two large yellow Frozen Mountain School buses parked on campus ready for student transport',
+  alt2: 'Frozen Mountain School students in red and navy uniforms posing beside the school van/minibus',
+  icon: 'TruckIcon',
+  accentColor: '#0A2463',
+  span: 'lg:col-span-1 lg:row-span-1',
+  en: {
+    title: 'School Transport',
+    desc: 'Safe and reliable school buses and vans ensuring students travel comfortably to and from school every day.',
+    tag: 'Transport'
+  },
+  sw: {
+    title: 'Usafiri wa Shule',
+    desc: 'Mabasi na mawakala salama na ya kuaminika yanayohakikisha wanafunzi wanasafiri vizuri kwenda na kutoka shuleni kila siku.',
+    tag: 'Usafiri'
+  }
 }];
 
 
@@ -142,7 +162,31 @@ export default function FacilitiesGrid({ lang }: Props) {
             className={`${facility.span} relative rounded-3xl overflow-hidden group cursor-pointer scale-in`}
             style={{ transitionDelay: `${i * 0.1}s` }}>
             
-              {/* Full-bleed image */}
+              {/* Full-bleed image — dual layout for transport */}
+              {'image2' in facility ? (
+                <div className="w-full h-full flex flex-col">
+                  <div className="relative flex-1 overflow-hidden">
+                    <AppImage
+                      src={facility.image}
+                      alt={facility.alt}
+                      width={600}
+                      height={300}
+                      className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
+                      sizes="(max-width: 768px) 100vw, 33vw"
+                    />
+                  </div>
+                  <div className="relative flex-1 overflow-hidden">
+                    <AppImage
+                      src={(facility as typeof facility & { image2: string }).image2}
+                      alt={(facility as typeof facility & { alt2: string }).alt2}
+                      width={600}
+                      height={300}
+                      className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
+                      sizes="(max-width: 768px) 100vw, 33vw"
+                    />
+                  </div>
+                </div>
+              ) : (
               <AppImage
               src={facility.image}
               alt={facility.alt}
@@ -150,6 +194,7 @@ export default function FacilitiesGrid({ lang }: Props) {
               height={600}
               className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
+              )}
             
 
               {/* Gradient overlay — always visible at bottom, intensifies on hover */}
