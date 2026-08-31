@@ -26,9 +26,11 @@ const galleryImages = [
   caption: { en: 'Modern Classrooms', sw: 'Madarasa ya Kisasa' }
 },
 {
-  src: 'https://frozenmountain-xi.vercel.app/_next/image?url=%2Fassets%2Fimages%2Ffrozen_mountain_music.png&w=3840&q=75',
-  alt: 'Tanzanian students performing choir and drama at Frozen Mountain School performing arts event',
-  caption: { en: 'Music & Performing Arts', sw: 'Muziki na Sanaa za Maonyesho' }
+  type: 'video',
+  src: '/assets/videos/culture-day.mp4',
+  poster: '/assets/images/cultural_day_poster.png',
+  alt: 'Frozen Mountain School students performing during cultural day celebrations',
+  caption: { en: 'Cultural Day Celebrations', sw: 'Sherehe za Siku ya Utamaduni' }
 },
 {
   src: '/assets/images/library__2_-1788002498750.png',
@@ -36,7 +38,7 @@ const galleryImages = [
   caption: { en: 'Library & Resource Centre', sw: 'Maktaba na Kituo cha Rasilimali' }
 },
 {
-  src: 'https://frozenmountain-xi.vercel.app/_next/image?url=%2Fassets%2Fimages%2Ffrozen_mountain_sports_grounds.png&w=3840&q=75',
+  src: '/assets/images/sports__2_-1788002759222.png',
   alt: 'Frozen Mountain School Tanzanian students in tracksuits playing football on the school sports grounds',
   caption: { en: 'Sports & Athletics', sw: 'Michezo na Riadha' }
 },
@@ -44,6 +46,16 @@ const galleryImages = [
   src: '/assets/images/A0C36620-BF27-4CA6-B47C-85646590E16D-1787904990643.jpg',
   alt: 'Frozen Mountain School students in red plaid uniforms on the school staircase in Tanzania',
   caption: { en: 'Our students — proud & ready', sw: 'Wanafunzi wetu — wenye fahari' }
+},
+{
+  src: '/assets/images/students-kids-1.jpeg',
+  alt: 'Frozen Mountain School students smiling together on campus',
+  caption: { en: 'Our Wonderful Students', sw: 'Wanafunzi Wetu Wazuri' }
+},
+{
+  src: '/assets/images/students-kids-2.jpeg',
+  alt: 'Frozen Mountain School students in uniform enjoying school life',
+  caption: { en: 'Everyday Moments', sw: 'Nyakati za Kila Siku' }
 },
 {
   src: '/assets/images/BD3D3181-CD02-4863-A2D9-1B0C48749864-1787904173254.png',
@@ -61,8 +73,17 @@ const galleryImages = [
   caption: { en: 'Student Hostel', sw: 'Bweni la Wanafunzi' }
 }];
 
-
-const marqueeImages = [...galleryImages, ...galleryImages];
+// First pass of the marquee: renders exactly as authored above (video plays here).
+// Second pass (the duplicate for the seamless scroll loop): video entries are
+// swapped for their poster image so we don't run two video decoders at once.
+const marqueeImages = [
+  ...galleryImages.map((img) => ({ ...img, _isFirstPass: true })),
+  ...galleryImages.map((img) =>
+    img.type === 'video'
+      ? { ...img, type: 'image' as const, src: img.poster, _isFirstPass: false }
+      : { ...img, _isFirstPass: false }
+  ),
+];
 
 export default function CampusGallery({ lang }: Props) {
   const sectionRef = useRef<HTMLDivElement>(null);
@@ -126,14 +147,26 @@ export default function CampusGallery({ lang }: Props) {
         <div className="flex gap-4 animate-marquee" style={{ width: 'max-content' }}>
           {marqueeImages.map((img, i) =>
           <div key={i} className="relative w-72 h-52 rounded-2xl overflow-hidden shrink-0 group cursor-pointer">
-              <AppImage
-              src={img.src}
-              alt={img.alt}
-              width={400}
-              height={280}
-              className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-              sizes="288px" />
-            
+              {img.type === 'video' ? (
+                <video
+                  src={img.src}
+                  poster={img.poster}
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                />
+              ) : (
+                <AppImage
+                src={img.src}
+                alt={img.alt}
+                width={400}
+                height={280}
+                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                sizes="288px" />
+              )}
+
               {/* Caption on hover */}
               <div
               className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-400 flex items-end"

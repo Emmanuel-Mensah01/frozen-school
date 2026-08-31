@@ -12,7 +12,9 @@ type Category = 'all' | 'facilities' | 'events' | 'student-life';
 
 interface GalleryItem {
   id: string;
+  type?: 'image' | 'video';
   src: string;
+  poster?: string;
   alt: string;
   category: Category;
   span: string;
@@ -41,7 +43,7 @@ const galleryItems: GalleryItem[] = [
 },
 {
   id: 'g3',
-  src: '/assets/images/ChatGPT_Image_Aug_29__2026__11_00_56_AM-1788001392365.png',
+  src: '/assets/images/modern_classroom-1788122373129.png',
   alt: 'Teacher instructing young students in a bright modern classroom at Frozen Mountain School',
   category: 'facilities',
   span: 'col-span-1 row-span-1',
@@ -59,7 +61,7 @@ const galleryItems: GalleryItem[] = [
 },
 {
   id: 'g6',
-  src: 'https://frozenmountain-xi.vercel.app/_next/image?url=%2Fassets%2Fimages%2Ffrozen_mountain_sports_grounds.png&w=3840&q=75',
+  src: '/assets/images/sports__2_-1788002759222.png',
   alt: 'Frozen Mountain School students in tracksuits playing football on the school sports grounds',
   category: 'student-life',
   span: 'col-span-1 row-span-1',
@@ -110,6 +112,35 @@ const galleryItems: GalleryItem[] = [
   span: 'col-span-1 row-span-1',
   caption: { en: 'Graduation 2025 — Girls', sw: 'Kuhitimu 2025 — Wasichana' },
   tag: { en: 'Events', sw: 'Matukio' }
+},
+{
+  id: 'g12',
+  type: 'video',
+  src: '/assets/videos/culture-day.mp4',
+  poster: '/assets/images/cultural_day_poster.png',
+  alt: 'Frozen Mountain School students performing during cultural day celebrations',
+  category: 'events',
+  span: 'col-span-2 row-span-2',
+  caption: { en: 'Cultural Day Celebrations', sw: 'Sherehe za Siku ya Utamaduni' },
+  tag: { en: 'Events', sw: 'Matukio' }
+},
+{
+  id: 'g13',
+  src: '/assets/images/students-kids-1.jpeg',
+  alt: 'Frozen Mountain School students smiling together on campus',
+  category: 'student-life',
+  span: 'col-span-1 row-span-1',
+  caption: { en: 'Our Wonderful Students', sw: 'Wanafunzi Wetu Wazuri' },
+  tag: { en: 'Student Life', sw: 'Maisha ya Wanafunzi' }
+},
+{
+  id: 'g14',
+  src: '/assets/images/students-kids-2.jpeg',
+  alt: 'Frozen Mountain School students in uniform enjoying school life',
+  category: 'student-life',
+  span: 'col-span-1 row-span-1',
+  caption: { en: 'Everyday Moments', sw: 'Nyakati za Kila Siku' },
+  tag: { en: 'Student Life', sw: 'Maisha ya Wanafunzi' }
 },
 ];
 
@@ -207,15 +238,26 @@ export default function GalleryGrid({ lang }: Props) {
             className={`${item.span} relative rounded-2xl overflow-hidden group cursor-pointer scale-in`}
             style={{ transitionDelay: `${i % 6 * 0.07}s` }}>
             
-              {/* Image */}
-              <AppImage
-              src={item.src}
-              alt={item.alt}
-              width={800}
-              height={600}
-              className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
-              sizes="(max-width: 768px) 50vw, 33vw" />
-            
+              {/* Media: image or video */}
+              {item.type === 'video' ? (
+                <video
+                  src={item.src}
+                  poster={item.poster}
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                  className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
+                />
+              ) : (
+                <AppImage
+                src={item.src}
+                alt={item.alt}
+                width={800}
+                height={600}
+                className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
+                sizes="(max-width: 768px) 50vw, 33vw" />
+              )}
 
               {/* Gradient overlay */}
               <div
@@ -259,8 +301,8 @@ export default function GalleryGrid({ lang }: Props) {
                 {lang === 'en' ? 'Schedule a campus tour and experience Frozen Mountain in person.' : 'Panga ziara ya kampasi na upate uzoefu wa Frozen Mountain.'}
               </p>
             </div>
-            <a
-              href="/contact"
+            
+              <a href="/contact"
               className="shrink-0 inline-flex items-center gap-2 bg-school-red text-white font-semibold py-3 px-6 rounded-full transition-all duration-300 hover:bg-red-700 hover:shadow-lg hover:shadow-school-red/30 hover:-translate-y-0.5">
               
               {lang === 'en' ? 'Book a Tour' : 'Panga Ziara'}

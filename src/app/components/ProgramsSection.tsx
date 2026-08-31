@@ -42,7 +42,7 @@ const programData = {
         accentColor: '#0A2463',
         bgColor: 'rgba(10,36,99,0.06)',
         borderColor: 'rgba(10,36,99,0.2)',
-        image: 'https://frozenmountain-xi.vercel.app/_next/image?url=%2Fassets%2Fimages%2Ffrozen_mountain_primary.png&w=3840&q=75',
+        image: '/assets/images/students-kids-2.jpeg',
         imageAlt: 'African primary school students in uniforms sitting in classroom during lesson at Frozen Mountain School',
         desc: 'A comprehensive primary education building strong academic foundations. Our curriculum prepares students for secondary school and beyond through rigorous academics, English medium instruction, sports, and holistic development.',
         features: ['Core Subjects', 'English Medium', 'Sports & Activities', 'Guidance & Counselling', 'Character Development', 'NECTA Curriculum'],
