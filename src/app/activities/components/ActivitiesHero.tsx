@@ -13,7 +13,7 @@ export default function ActivitiesHero({ lang }: Props) {
     <section className="relative min-h-[52vh] flex items-end pt-16 overflow-hidden">
       <div className="absolute inset-0">
         <AppImage
-          src="https://frozenmountain-xi.vercel.app/_next/image?url=%2Fassets%2Fimages%2Ffrozen_mountain_music.png&w=3840&q=75"
+          src="/assets/images/Music.png"
           alt="Students performing music and arts at Frozen Mountain School stage event"
           width={1920}
           height={800}
