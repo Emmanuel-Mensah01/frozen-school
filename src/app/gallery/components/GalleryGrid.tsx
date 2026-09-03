@@ -92,7 +92,7 @@ const galleryItems: GalleryItem[] = [
   alt: 'Frozen Mountain School graduating boys in sharp navy blue suits celebrating graduation day 2025',
   category: 'events',
   span: 'col-span-2 row-span-2',
-  caption: { en: 'Graduatiing — Boys', sw: 'Kuhitimu — Wavulana' },
+  caption: { en: 'Graduating — Boys', sw: 'Kuhitimu — Wavulana' },
   tag: { en: 'Events', sw: 'Matukio' }
 },
 {
