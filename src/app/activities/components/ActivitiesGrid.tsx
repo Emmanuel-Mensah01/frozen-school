@@ -11,26 +11,9 @@ interface Props {
 
 const activities = [
 {
-  id: 'music',
-  num: '01',
-  image: 'https://frozenmountain-xi.vercel.app/_next/image?url=%2Fassets%2Fimages%2Ffrozen_mountain_music.png&w=3840&q=75',
-  alt: 'Students performing choir, drama and dance at Frozen Mountain School performing arts event',
-  icon: 'MusicalNoteIcon',
-  accentColor: '#C1121F',
-  span: 'lg:col-span-2',
-  en: {
-    title: 'Music & Performing Arts',
-    desc: 'Choir, drama, dance, and instrumental music — students perform at school events and community functions, building confidence and creative expression.'
-  },
-  sw: {
-    title: 'Muziki na Sanaa za Maonyesho',
-    desc: 'Kwaya, tamthilia, ngoma, na muziki wa vyombo — wanafunzi huigiza katika matukio ya shule na jamii, wakijenga ujasiri na ubunifu.'
-  }
-},
-{
   id: 'sports',
   num: '02',
-  image: 'https://frozenmountain-xi.vercel.app/_next/image?url=%2Fassets%2Fimages%2Ffrozen_mountain_sports_grounds.png&w=3840&q=75',
+  image: '/assets/images/sports__2_-1788002759222.png',
   alt: 'Students playing football and netball on sports grounds at Frozen Mountain School',
   icon: 'TrophyIcon',
   accentColor: '#0A2463',
@@ -47,7 +30,7 @@ const activities = [
 {
   id: 'science',
   num: '03',
-  image: 'https://frozenmountain-xi.vercel.app/_next/image?url=%2Fassets%2Fimages%2Ffrozen_mountain_science.png&w=3840&q=75',
+  image: '/assets/images/lab.png',
   alt: 'Students conducting science experiments and STEM projects in laboratory at Frozen Mountain School',
   icon: 'BeakerIcon',
   accentColor: '#1a5c2e',
@@ -81,7 +64,7 @@ const activities = [
 {
   id: 'community',
   num: '05',
-  image: 'https://frozenmountain-xi.vercel.app/_next/image?url=%2Fassets%2Fimages%2Ffrozen_mountain_community.png&w=3840&q=75',
+  image: '/assets/images/cuommunity service.png',
   alt: 'Students participating in community service and charity drives organized by Frozen Mountain School',
   icon: 'HeartIcon',
   accentColor: '#C1121F',

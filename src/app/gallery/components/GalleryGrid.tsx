@@ -92,7 +92,7 @@ const galleryItems: GalleryItem[] = [
   alt: 'Frozen Mountain School graduating boys in sharp navy blue suits celebrating graduation day 2025',
   category: 'events',
   span: 'col-span-2 row-span-2',
-  caption: { en: 'Graduation 2025 — Boys', sw: 'Kuhitimu 2025 — Wavulana' },
+  caption: { en: 'Graduatiing — Boys', sw: 'Kuhitimu — Wavulana' },
   tag: { en: 'Events', sw: 'Matukio' }
 },
 {
@@ -110,7 +110,7 @@ const galleryItems: GalleryItem[] = [
   alt: 'Frozen Mountain School graduating girls in sky blue uniforms smiling proudly at the 2025 graduation ceremony in Tanzania',
   category: 'events',
   span: 'col-span-1 row-span-1',
-  caption: { en: 'Graduation 2025 — Girls', sw: 'Kuhitimu 2025 — Wasichana' },
+  caption: { en: 'Graduating — Girls', sw: 'Kuhitimu  — Wasichana' },
   tag: { en: 'Events', sw: 'Matukio' }
 },
 {
