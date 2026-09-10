@@ -11,7 +11,7 @@ interface Props {
 
 const content = {
   en: {
-    admissionsOpen: 'Admissions Open — 2025/2026 Academic Year',
+    admissionsOpen: 'Admissions Open — 2026/2027 Academic Year',
     headline: 'Where Every Child',
     headlineAccent: 'Finds Their Way',
     sub: 'Frozen Mountain Nursery, Primary & Secondary School — nurturing curious minds, building strong character, and inspiring a lifelong love of learning.',
@@ -30,7 +30,7 @@ const content = {
 
   },
   sw: {
-    admissionsOpen: 'Usajili Umefunguliwa — Mwaka wa Masomo 2025/2026',
+    admissionsOpen: 'Usajili Umefunguliwa — Mwaka wa Masomo 2026/2027',
     headline: 'Mahali Kila Mtoto',
     headlineAccent: 'Anapata Njia Yake',
     sub: 'Shule ya Frozen Mountain Chekechea, Msingi & Sekondari — ikilelewa akili za udadisi, kujenga tabia imara, na kuhamasisha upendo wa kujifunza maishani.',

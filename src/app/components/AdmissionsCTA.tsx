@@ -155,7 +155,7 @@ export default function AdmissionsCTA({ lang }: Props) {
                 <div className="space-y-6">
                   <div className="inline-flex items-center gap-2 bg-white/10 text-white/90 text-xs font-bold px-4 py-1.5 rounded-full uppercase tracking-widest border border-white/15">
                     <span className="w-1.5 h-1.5 rounded-full bg-school-red animate-pulse" />
-                    {lang === 'en' ? 'Admissions Open — 2025/2026' : 'Usajili Umefunguliwa — 2025/2026'}
+                    {lang === 'en' ? 'Admissions Open — 2026/2027' : 'Usajili Umefunguliwa — 2026/2027'}
                   </div>
 
                   <h2 className="text-2xl sm:text-4xl font-extrabold text-white leading-tight">

@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     url: 'https://frozenmoun5485.builtwithrocket.new',
     title: 'Frozen Mountain School — Best Nursery, Primary & Secondary School in Dar es Salaam',
     description:
-    "Ministry-accredited school in King'anzi A, Ubungo, Dar es Salaam. Nursery through Form IV. Day & boarding options. Enroll now for 2025/2026.",
+    "Ministry-accredited school in King'anzi A, Ubungo, Dar es Salaam. Nursery through Form IV. Day & boarding options. Enroll now for 2026/2027.",
     siteName: 'Frozen Mountain School',
     images: [
     {
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Frozen Mountain School — Best School in Dar es Salaam',
     description:
-    "Ministry-accredited Nursery, Primary & Secondary School in Ubungo, Dar es Salaam. NECTA curriculum. Day & boarding. Admissions open 2025/2026.",
+    "Ministry-accredited Nursery, Primary & Secondary School in Ubungo, Dar es Salaam. NECTA curriculum. Day & boarding. Admissions open 2026/2027.",
     images: ['https://frozenmoun5485.builtwithrocket.new/assets/images/building_1-1788001389374.png']
   }
 };
