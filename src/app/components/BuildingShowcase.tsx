@@ -383,7 +383,7 @@ export default function BuildingShowcase({ lang }: Props) {
 
         {/* Third row — Secondary school images */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 mt-5">
-          {/* Card 7: Secondary school building */}
+          {/* Card 7: Secondary school students and building */}
           <div className="fade-in-up">
             <div
               className="relative rounded-3xl overflow-hidden shadow-2xl group"
