@@ -25,6 +25,10 @@ const content = {
     card5Sub: 'Comfortable boarding facilities for students',
     card6Caption: 'Hostel Grounds',
     card6Sub: 'Safe and serene residential environment',
+    card7Caption: 'Secondary School Building',
+    card7Sub: 'Purpose-built facility for secondary education',
+    card8Caption: 'Secondary School Campus',
+    card8Sub: 'Modern learning spaces for older students',
     badge1: 'Modern Infrastructure',
     badge2: 'Safe & Secure',
     badge3: 'Peaceful Environment',
@@ -45,6 +49,10 @@ const content = {
     card5Sub: 'Makazi mazuri ya wanafunzi wa bweni',
     card6Caption: 'Mazingira ya Bweni',
     card6Sub: 'Mazingira salama na tulivu ya makazi',
+    card7Caption: 'Jengo la Shule ya Sekondari',
+    card7Sub: 'Jengo lililojengwa mahsusi kwa elimu ya sekondari',
+    card8Caption: 'Kampasi ya Shule ya Sekondari',
+    card8Sub: 'Nafasi za kisasa za kujifunzia kwa wanafunzi wakubwa',
     badge1: 'Miundombinu ya Kisasa',
     badge2: 'Salama na Imara',
     badge3: 'Mazingira ya Amani',
@@ -367,6 +375,93 @@ export default function BuildingShowcase({ lang }: Props) {
               <div className="absolute top-4 right-4">
                 <span className="inline-flex items-center gap-1.5 bg-black/40 backdrop-blur-sm text-white/90 text-xs font-semibold px-3 py-1.5 rounded-full border border-white/15">
                   ☀️ {lang === 'en' ? 'Hostel Grounds' : 'Mazingira ya Bweni'}
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Third row — Secondary school images */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 mt-5">
+          {/* Card 7: Secondary school building */}
+          <div className="fade-in-up">
+            <div
+              className="relative rounded-3xl overflow-hidden shadow-2xl group"
+              style={{ height: '280px' }}
+            >
+              <AppImage
+                src="/assets/images/sec building.png"
+                alt="Frozen Mountain School secondary school building — purpose-built facility for secondary education in Dar es Salaam"
+                width={700}
+                height={280}
+                className="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105"
+                sizes="(max-width: 768px) 100vw, 50vw"
+              />
+              <div
+                className="absolute inset-0 pointer-events-none"
+                style={{
+                  background:
+                    'linear-gradient(to top, rgba(10,36,99,0.8) 0%, rgba(10,36,99,0.15) 55%, transparent 100%)',
+                }}
+              />
+              <div className="absolute bottom-0 left-0 right-0 p-6">
+                <div className="flex items-end justify-between">
+                  <div>
+                    <p className="text-white font-bold text-base leading-tight mb-0.5">
+                      {t.card7Caption}
+                    </p>
+                    <p className="text-white/60 text-xs">{t.card7Sub}</p>
+                  </div>
+                  <div className="w-8 h-8 rounded-full bg-purple-400/20 backdrop-blur-sm flex items-center justify-center border border-purple-400/30">
+                    <Icon name="AcademicCapIcon" size={14} className="text-purple-300" />
+                  </div>
+                </div>
+              </div>
+              <div className="absolute top-4 left-4">
+                <span className="inline-flex items-center gap-1.5 bg-black/40 backdrop-blur-sm text-white/90 text-xs font-semibold px-3 py-1.5 rounded-full border border-white/15">
+                  🎓 {lang === 'en' ? 'Secondary' : 'Sekondari'}
+                </span>
+              </div>
+            </div>
+          </div>
+
+          {/* Card 8: Secondary school campus */}
+          <div className="fade-in-up">
+            <div
+              className="relative rounded-3xl overflow-hidden shadow-2xl group"
+              style={{ height: '280px' }}
+            >
+              <AppImage
+                src="/assets/images/sec school.png"
+                alt="Frozen Mountain School secondary school campus — modern learning spaces for older students in Dar es Salaam"
+                width={700}
+                height={280}
+                className="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105"
+                sizes="(max-width: 768px) 100vw, 50vw"
+              />
+              <div
+                className="absolute inset-0 pointer-events-none"
+                style={{
+                  background:
+                    'linear-gradient(to top, rgba(10,36,99,0.8) 0%, rgba(10,36,99,0.15) 55%, transparent 100%)',
+                }}
+              />
+              <div className="absolute bottom-0 left-0 right-0 p-6">
+                <div className="flex items-end justify-between">
+                  <div>
+                    <p className="text-white font-bold text-base leading-tight mb-0.5">
+                      {t.card8Caption}
+                    </p>
+                    <p className="text-white/60 text-xs">{t.card8Sub}</p>
+                  </div>
+                  <div className="w-8 h-8 rounded-full bg-cyan-400/20 backdrop-blur-sm flex items-center justify-center border border-cyan-400/30">
+                    <Icon name="BuildingLibraryIcon" size={14} className="text-cyan-300" />
+                  </div>
+                </div>
+              </div>
+              <div className="absolute top-4 right-4">
+                <span className="inline-flex items-center gap-1.5 bg-black/40 backdrop-blur-sm text-white/90 text-xs font-semibold px-3 py-1.5 rounded-full border border-white/15">
+                  🏫 {lang === 'en' ? 'Secondary Campus' : 'Kampasi ya Sekondari'}
                 </span>
               </div>
             </div>
