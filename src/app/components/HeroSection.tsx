@@ -21,11 +21,11 @@ const content = {
     badge2: 'Day & Boarding',
     badge3: 'NECTA Curriculum',
     badge4: '500+ Families',
-    statLabel: '15+ Years of Excellence',
+    statLabel: '5+ Years of Excellence',
     stats: [
     { value: '500+', label: 'Enrolled Students' },
     { value: '40+', label: 'Qualified Teachers' },
-    { value: '15+', label: 'Years of Excellence' },
+    { value: '5+', label: 'Years of Excellence' },
     { value: '98%', label: 'Parent Satisfaction' }]
 
   },
@@ -40,11 +40,11 @@ const content = {
     badge2: 'Siku & Bweni',
     badge3: 'Mtaala wa NECTA',
     badge4: 'Familia 500+',
-    statLabel: 'Miaka 15+ ya Ubora',
+    statLabel: 'Miaka 5+ ya Ubora',
     stats: [
     { value: '500+', label: 'Wanafunzi Waliojisajili' },
     { value: '40+', label: 'Walimu Waliohitimu' },
-    { value: '15+', label: 'Miaka ya Ubora' },
+    { value: '5+', label: 'Miaka ya Ubora' },
     { value: '98%', label: 'Ridhaa ya Wazazi' }]
 
   }
