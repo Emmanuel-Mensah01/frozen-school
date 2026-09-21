@@ -16,7 +16,7 @@ export const viewport: Viewport = {
   initialScale: 1,
 };
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://frozenmoun5485.builtwithrocket.new';
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.frozenmountainschools.com';
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),

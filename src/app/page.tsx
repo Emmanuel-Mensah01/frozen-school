@@ -23,11 +23,11 @@ export const metadata: Metadata = {
   'shule bora Dar es Salaam'],
 
   alternates: {
-    canonical: 'https://frozenmoun5485.builtwithrocket.new'
+    canonical: 'https://www.frozenmountainschools.com'
   },
   openGraph: {
     type: 'website',
-    url: 'https://frozenmoun5485.builtwithrocket.new',
+    url: 'https://www.frozenmountainschools.com',
     title: 'Frozen Mountain School — Best Nursery, Primary & Secondary School in Dar es Salaam',
     description:
     "Ministry-accredited school in King'anzi A, Ubungo, Dar es Salaam. Nursery through Form IV. Day & boarding options. Enroll now for 2026/2027.",
@@ -47,7 +47,7 @@ export const metadata: Metadata = {
     title: 'Frozen Mountain School — Best School in Dar es Salaam',
     description:
     "Ministry-accredited Nursery, Primary & Secondary School in Ubungo, Dar es Salaam. NECTA curriculum. Day & boarding. Admissions open 2026/2027.",
-    images: ['https://frozenmoun5485.builtwithrocket.new/assets/images/building_1-1788001389374.png']
+    images: ['https://www.frozenmountainschools.com/assets/images/building_1-1788001389374.png']
   }
 };
 

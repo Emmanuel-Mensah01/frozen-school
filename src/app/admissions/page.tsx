@@ -17,11 +17,11 @@ export const metadata: Metadata = {
   'NECTA school enrollment'],
 
   alternates: {
-    canonical: 'https://frozenmoun5485.builtwithrocket.new/admissions'
+    canonical: 'https://www.frozenmountainschools.com/admissions'
   },
   openGraph: {
     type: 'website',
-    url: 'https://frozenmoun5485.builtwithrocket.new/admissions',
+    url: 'https://www.frozenmountainschools.com/admissions',
     title: 'Admissions 2026/2027 — Frozen Mountain School',
     description:
     "Enroll your child at Frozen Mountain School, Dar es Salaam. Nursery through Form IV. Day & boarding. Apply online today.",
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Admissions Open — Frozen Mountain School Dar es Salaam',
     description: 'Apply now for 2026/2027. Nursery, Primary & Secondary. Day & boarding options available.',
-    images: ['https://frozenmoun5485.builtwithrocket.new/assets/images/building_1-1788001389374.png']
+    images: ['https://www.frozenmountainschools.com/assets/images/building_1-1788001389374.png']
   }
 };
 

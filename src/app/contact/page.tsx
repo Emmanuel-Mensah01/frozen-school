@@ -15,11 +15,11 @@ export const metadata: Metadata = {
   'school WhatsApp Tanzania'],
 
   alternates: {
-    canonical: 'https://frozenmoun5485.builtwithrocket.new/contact'
+    canonical: 'https://www.frozenmountainschools.com/contact'
   },
   openGraph: {
     type: 'website',
-    url: 'https://frozenmoun5485.builtwithrocket.new/contact',
+    url: 'https://www.frozenmountainschools.com/contact',
     title: 'Contact Frozen Mountain School — Dar es Salaam',
     description:
     "Reach us at King'anzi A, Ubungo, Dar es Salaam. Call +255 717 437 788 or WhatsApp. We're here to help.",
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Contact Frozen Mountain School',
     description: "King'anzi A, Ubungo, Dar es Salaam. +255 717 437 788",
-    images: ['https://frozenmoun5485.builtwithrocket.new/assets/images/building_2-1788001323600.jpeg']
+    images: ['https://www.frozenmountainschools.com/assets/images/building_2-1788001323600.jpeg']
   }
 };
 
